@@ -126,6 +126,7 @@ nav a:hover {
     padding: 20px;
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .delivery-text {
@@ -154,4 +155,60 @@ nav a:hover {
     max-width: 100px;
     height: auto;
     border-radius: 5px;
+}
+
+
+.triple-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Assure que tous les éléments aient la même hauteur */
+}
+
+.left-image,
+.right-image {
+    flex: 1;
+    /* Prend 1 fraction de l'espace disponible */
+    display: flex;
+    align-items: center;
+    /* Centrer verticalement les images */
+    justify-content: center;
+    /* Centrer horizontalement les images */
+}
+
+.center-text {
+    flex: 2;
+    /* Prend 2 fractions de l'espace disponible, donc plus large */
+    background-color: rgba(245, 245, 220, 0.9);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centrer le contenu verticalement */
+}
+
+.center-text p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    /* Espacement entre les lignes */
+    letter-spacing: 0.05em;
+    /* Espacement entre les lettres */
+    margin-bottom: 1.5rem;
+    /* Espacement entre les paragraphes */
+    text-align: center;
+}
+
+/* Pour enlever l'espacement après le dernier paragraphe */
+.center-text p:last-child {
+    margin-bottom: 0;
+}
+
+.left-image img,
+.right-image img {
+    max-height: 100%;
+    /* Ajuste la hauteur au maximum de leur conteneur parent */
+    width: auto;
+    /* Ajuste la largeur proportionnellement */
 }
