@@ -1,0 +1,69 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    /* Centrer la navigation horizontalement */
+    align-items: center;
+    padding: 40px 20px;
+    /* Augmenter l'espacement autour de la navigation */
+}
+
+.header-bg {
+    background-image: url('/assets/img/pasta.png');
+    background-size: cover;
+    background-position: center 65%;
+    background-repeat: no-repeat;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    margin: 20px 0;
+    /* Ajout d'une marge pour éloigner un peu du bord supérieur */
+}
+
+nav li {
+    margin: 0 15px;
+    /* Espace entre les liens */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    /* Augmenter l'ombre pour améliorer la visibilité */
+    transition: border-bottom 0.3s, color 0.3s;
+    /* Transition pour le changement de couleur et l'apparition du soulignement */
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+    /* Soulignement au survol */
+    color: #eee;
+    /* Un léger changement de couleur pour le survol */
+}
+
+.welcome-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    height: 40vh;
+    margin: 40px 0;
+    /* Espacement entre le header et le contenu en dessous */
+}
+
+.welcome-message h1 {
+    font-size: 2.5em;
+    /* Augmentation de la taille de la police */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Ombre prononcée pour la visibilité */
+}
