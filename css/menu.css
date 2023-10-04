@@ -1,0 +1,38 @@
+.menu-container {
+    max-width: 1000px;
+    /* ou toute autre largeur que vous trouvez adaptée */
+    margin: 0 auto;
+    /* pour centrer horizontalement */
+    padding: 20px;
+    /* ajoute de l'espace autour du contenu */
+}
+
+.menu-section h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.separator {
+    height: 2px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.menu-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-section li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.dish-name,
+.dish-price {
+    font-size: 1.2em;
+    padding: 0 10px;
+    /* ajoute de l'espacement à gauche et à droite du nom du plat et du prix pour éviter qu'ils ne soient trop près du bord */
+}
