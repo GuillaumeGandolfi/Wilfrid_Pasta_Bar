@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function loadHeader() {
-    fetch('/html/commons/header.html')
+    fetch('./html/commons/header.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
