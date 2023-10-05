@@ -15,6 +15,10 @@
     padding: 0 15px;
     margin-top: 20px;
     margin-bottom: 100px;
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .traiteur-text,
@@ -147,4 +151,29 @@
     line-height: 1.8;
     letter-spacing: 0.5px;
     color: #666;
+}
+
+.p-italic {
+    font-style: italic;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* ou selon votre préférence */
+    margin-bottom: 30px;
+    /* ou selon votre préférence */
+    overflow: auto;
+    /* au cas où les images débordent du conteneur */
+    padding: 0 30px;
+}
+
+.image-gallery img {
+    width: calc((100% - 60px) / 7 - 10px);
+    max-width: 100%;
+    /* pour s'assurer qu'elles ne dépassent pas la largeur disponible */
+    height: auto;
+    margin: 0 5px;
+    /* 5px de chaque côté, d'où le '- 10px' dans la largeur */
 }
