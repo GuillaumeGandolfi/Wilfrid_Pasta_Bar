@@ -1,0 +1,70 @@
+.catering-page nav a {
+    color: black;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+}
+
+.catering-page nav a::before,
+.catering-page nav a::after {
+    background-color: black;
+}
+
+.traiteur-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+
+.traiteur-text,
+.traiteur-photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 48%;
+    /* cela leur donne une largeur de 48% du conteneur, le 4% restant (100% - 96%) est utilisé comme marge entre les deux divs */
+    box-sizing: border-box;
+    /* cela garantit que les paddings/marges ne rendent pas les divs plus grandes que la largeur définie */
+}
+
+.traiteur-photos {
+    align-items: center;
+}
+
+.traiteur-photos img {
+    flex: 1;
+    width: 49%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+
+.traiteur-text {
+    background: linear-gradient(135deg, rgba(255, 255, 240, 0.9), rgba(245, 245, 220, 0.9));
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 1;
+    color: #333;
+    max-width: 600px;
+    padding: 30px
+}
+
+.traiteur-text p {
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.traiteur-text p br {
+    margin-bottom: 8px;
+    content: " ";
+    display: block;
+}
+
+.traiteur-text h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #111;
+    letter-spacing: 0.7px;
+}
