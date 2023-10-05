@@ -13,7 +13,7 @@ header {
 }
 
 .header-bg {
-    background-image: url('./assets/img/pasta.png');
+    background-image: url('../assets/img/pasta.png');
     background-size: cover;
     background-position: center 60%;
     background-repeat: no-repeat;
