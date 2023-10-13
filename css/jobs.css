@@ -1,0 +1,68 @@
+.jobs-page nav a {
+    color: black;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+}
+
+.jobs-page nav a::before,
+.jobs-page nav a::after {
+    background-color: black;
+}
+
+
+.emploi-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.emploi-content {
+    flex: 1;
+    margin-right: 2%;
+    max-width: 55%;
+}
+
+.emploi-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emploi-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.emploi-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.emploi-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.emploi-content p {
+    margin-bottom: 20px;
+}
+
+.emploi-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.emploi-content ul li {
+    margin-bottom: 10px;
+}
+
+.emploi-content a {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+.emploi-content a:hover {
+    text-decoration: none;
+}
