@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -21,13 +21,6 @@
     flex: 1;
     margin-right: 2%;
     max-width: 55%;
-}
-
-.emploi-image {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .emploi-image img {
@@ -65,4 +58,12 @@
 
 .emploi-content a:hover {
     text-decoration: none;
+}
+
+
+.emploi-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
