@@ -91,6 +91,7 @@
 
 .card-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
@@ -104,8 +105,8 @@
     flex-direction: column;
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
     overflow: hidden;
+    margin-bottom: 40px;
 }
 
 .card img {
@@ -169,4 +170,14 @@
 .card-content strong {
     display: inline-block;
     margin-bottom: 10px;
+}
+
+.img-section {
+    display: flex;
+    justify-content: center;
+}
+
+.img-section img {
+    max-width: 150px;
+    padding: 10px;
 }
