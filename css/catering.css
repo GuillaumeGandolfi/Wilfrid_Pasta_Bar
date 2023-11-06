@@ -174,10 +174,70 @@
 
 .img-section {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    /* Ajuste l'espacement entre les images */
 }
 
 .img-section img {
+    flex: 1 1 auto;
     max-width: 150px;
-    padding: 10px;
+    object-fit: cover;
+    padding: 5px;
+    /* Diminuez si nécessaire pour les petits écrans */
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Pour les écrans plus petits, nous voulons une seule colonne */
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .image-content,
+    .text-content {
+        padding: 0 10px;
+    }
+
+    .card-content h2,
+    .card-content h3 {
+        font-size: 20px;
+    }
+
+    .card img {
+        height: auto;
+    }
+
+    .img-section img {
+        max-width: 100px;
+        /* ajustez la taille des images dans la section img-section */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card-section {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 10px;
+        width: calc(100% - 20px);
+        /* permet aux cartes de s'adapter à l'espace disponible */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .text-content p,
+    .card-content p {
+        font-size: 16px;
+        /* Réduisez la taille de la police pour une meilleure lisibilité sur les petits écrans */
+    }
 }
